@@ -19,17 +19,13 @@
 </head>
 
 <body>
-    <script>
-        function goBack() {
-            window.history.back();
-        }
-    </script>
+    
 
     {% filter markdown %}
     {% endfilter %}
     <hr />
 
-
+    <button class ="button" onclick="goBack()">Go Back</button>
     <div class="container">
         <div class="row">
             <div class="col-md-6">
@@ -39,6 +35,7 @@
 
                 </div>
             </div>
+            
             <div class="col-md-6">
                 <div class="card mb-10 shadow-sm" id="custom_card2">
                     <h4>Result of Data</h4>
@@ -49,7 +46,12 @@
 
 
     </div>
-
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+    
     <script type="text/javascript">
         $('.file_upload').file_upload();
     </script>

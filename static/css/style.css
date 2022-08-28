@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body {
+    background: url(https://images.wallpaperscraft.com/image/single/clouds_sky_porous_338222_1920x1080.jpg)no-repeat center center fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.right {
+    right: 0;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.left {
+    left: 0;
+    background: rgb(68, 67, 67);
+}
+
+form {
+    text-align: center;
+    padding-top: 1.5rem;
+}
+
+.button {
+    border: 1px solid rgb(80, 78, 78);
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.button:hover {
+    box-shadow: inset 0 0 0 #f9e506;
+}
+
+.custom-file-upload {
+    border: 1px solid rgb(80, 78, 78);
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+p {
+    font-size: larger;
+}
+
+.small {
+    font-size: small;
+    margin: 10px;
+}
+
+header {
+    font-weight: bold;
+    font-size: large;
+    text-align: center;
+    margin: 0.5rem;
+}
+
+.container-content {
+    background: white;
+    border: 0.2rem solid rgb(70, 70, 70);
+    width: 50%;
+    margin: 0 auto;
+}
+
+.btn-back {
+    margin-left: 29.5rem;
+    margin-bottom: 1rem;
+}
+
+.header-content {
+    color: antiquewhite;
+    border: 1.5px solid;
+    border-radius: 10px;
+    text-align: center;
+    display: inline-block;
+    font-size: 5rem;
+    font-weight: 900;
+}
+
+.content-found {
+    display: inline;
+    text-align: center;
+}
+
+.header-content-info {
+    border: 1.5px solid;
+    border-radius: 10px;
+    text-align: center;
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.container h4{
+    font-weight: bold;
+}

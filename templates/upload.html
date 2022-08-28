@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NLP</title>
+    <link rel="stylesheet" href="{{ url_for ('static', filename='css/style.css') }}">
+</head>
+
+<body>
+    
+    <!-- <div class="split left">
+        <div class="centered">
+            <header>
+                <p class="header-content">NATURAL LANGUAGE PROCESSING</p>
+            </header>
+        </div>
+      </div> -->
+    <div>
+        <header>
+            <p class="header-content-info">PROCESSING PAGE</p>
+        </header>
+        <div class="centered">
+            <form action="http://localhost:5000/show" method="POST" enctype="multipart/form-data">
+                <input class="custom-file-upload" type="file" name="file" multiple />
+                <input class="button" type="submit" value="Show Content" />
+            </form>
+            <form action="/search" method="POST" enctype="multipart/form-data">
+                <input class="button" type="text" id="word" name="word" placeholder="Insert word" />
+                <div class="content-found">
+                    <p>{{msg}} {{msg3}} {{msg4}}</p>
+                </div>
+                <input class="button" type="submit" value="Search" />
+            </form>
+            <form action="/topfive" method="POST" enctype="multipart/form-data">
+                <p> Top 5 of word between BOW and TF-IDF </p>
+                <input class="button" type="submit" value="Enter" />
+            </form>
+            <form method="POST" action="{{ url_for('extract')}}">
+                <p> Displacy entity recognition visualizer </p>
+                <textarea rows="10" cols="50" required="true" name="rawtext" class="form-control">
+                </textarea>
+                <br>
+                <button type="reset" class="button" > Clear</button>
+                <button type="submit" class="button" > Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

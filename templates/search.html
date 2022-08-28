@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NLP</title>
+    <link rel="stylesheet" href="{{ url_for ('static', filename='css/style.css') }}">
+</head>
+
+<body>
+    <div class="container"></div>
+    <form action="http://localhost:5000/show" method="POST" enctype="multipart/form-data">
+        <input class="custom-file-upload" type="file" name="file" multiple />
+        <input class="button" type="submit" value="submit" />
+    </form>
+
+    <form action="/search" method="POST" enctype="multipart/form-data">
+        <input class="button" type="text" id="word" name="word" placeholder="Insert word" />
+        <div class="content-found">
+            <p>{{msg}} {{msg3}} {{msg4}}</p>
+        </div>
+        <input class="button" type="submit" />
+    </form>
+    <form action="/topfive" method="POST" enctype="multipart/form-data">
+        <br><br>
+        <p> TOP 5 OF WORD BETWEEN BOW AND TF-IDF </p>
+        <input class="button" type="submit" />
+    </form>
+</body>
+
+</html>
